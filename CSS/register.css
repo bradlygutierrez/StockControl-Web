@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family:"Inter";
+}
+
+body{
+    font-size: 1.6rem;
+    background: linear-gradient(39deg,rgb(33, 240, 136),rgb(9, 49, 230));
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40rem;
+    background: white;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.center h1{
+    text-align: center;
+    padding: 0 0 2rem 0;
+}
+
+.center form{
+    padding: 0 4rem 0 0;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 0.2rem solid #adadad;
+    margin: 3rem 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 0.5rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    color: #adadad;
+    transform: translateY(-50%);    
+    transition: 0.5s;
+}
+
+.txt_field span::before{
+    content: ' ';
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #2691d9;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass :hover{
+    text-decoration: underline;
+}
+
+input[type="Submit"]{
+    width: 100%;
+    height: 50px;
+    border: 0.1rem;
+    background-color: #2691d9;
+    border-radius: 2.5rem;
+    font-size: 1.6rem;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="Submit"]:hover{
+    border-color: #2691d9;
+    transition: 0.1s;
+    height: 5.1rem;
+}
+
+.signup_link{
+    margin: 3rem 0 0 0;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #666666;   
+}
+
+.signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.signup_link a:hover{
+    text-decoration: underline;
+}
