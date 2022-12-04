@@ -25,7 +25,7 @@ body{
 .header-section{
 	padding-top:4rem ;
 	padding-bottom: 4rem;
-	width: 100%vw;
+	width: 100%;
 	display: flex;
 	background-color: whitesmoke;
 	justify-content: space-around;

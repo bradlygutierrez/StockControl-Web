@@ -4,33 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StockControl</title>
-    <link rel="stylesheet" href="../CSS/index.css">
+    <title>Login StockControl</title>
+    <link rel="stylesheet" href="../CSS/login.css">
 </head>
 <body>
-    <header class="header-section">
-        <h1 class="Title1"> StockControl </h1>
-
-		<section class="Input-Header-Container">
-			<span class="Search-icon"></span>
-			<input type="text" name="" id="">
-		</section>	
-		<nav class="menu-header-section">
-			<ul>
-				<li><a href="">inicio</a></li>
-				<li><a href="">Productos</a> </li>
-				<li><a href="">Entradas</a></li>
-				<li> <a href="">Salidas</a> </li>
-				<li> <a href="">Usarios</a> </li>
-				<li><a href="">Ajustes</a></li>
-			</ul>
-		</nav> 
-    </header>
-    <main>
-
+    <main class="center">
+        <h1>Login</h1>
+        <form method="post" action="mailto:bradlygc@gmail.com">
+            <section class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label >Username</label>
+            </section>
+            <section class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label >Password</label>
+            </section>
+            <div class="pass">
+                Forgot Password?
+            </div>
+            <input type="submit" value="Login" >
+            <div class="signup_link">
+                Not a member?
+                <a href="../HTML/registro.html">Signup</a>
+            </div>
+        </form>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>

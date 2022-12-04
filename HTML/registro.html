@@ -4,38 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login StockCont</title>
+    <title>Register StockControl</title>
     <link rel="stylesheet" href="../CSS/login.css">
 </head>
 <body>
     <main class="center">
         <h1>Register</h1>
-        <form method="post">
+        <form name="form" action="userRegister.php" method="post">
             <section class="txt_field">
-                <input type="text" required>
+                <input name="username" type="text" required>
                 <span></span>
                 <label >Username</label>
             </section>
             <section class="txt_field">
-                <input type="email" required>
+                <input name="email" type="email" required>
                 <span></span>
-                <label >Email</label>
+                <label>Email</label>
             </section>
             <section class="txt_field">
-                <input type="password" required>
+                <input name="password" type="password" required>
                 <span></span>
                 <label >Password</label>
             </section>
             <section class="txt_field">
-                <input type="password" required>
+                <input name="confirmPassword" type="password" required>
                 <span></span>
                 <label >Confirm password</label>
             </section>
             <input type="submit" value="login">
-            <div class="signup_link">
-                <a href="../HTML/login.html">Come back</a>
-            </div>
         </form>
+        <div class="signup_link">
+            <a href="../HTML/login.html">Come back</a>
+        </div>
     </main>
 </body>
 </html>
