@@ -9,5 +9,6 @@ function conn(){
     $connect = mysqli_connect($hostName, $userDB, $passwordDB, $dbName);
     return $connect;
 }
+//BD connection
 
 ?>
